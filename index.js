@@ -39,9 +39,17 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(/* code here */) {
-  /* code here */
-}
+
+ function makePersonObject(id, name, email) {
+const person = {
+  id: id,
+  name: name,
+  email: email 
+};
+return person;
+};
+
+makePersonObject('cool', 'jack', 'emial');
 
 /**
  * ### Challenge `getName`
@@ -56,9 +64,17 @@ function makePersonObject(/* code here */) {
  * passing { id: 1, name: 'Leia', email: 'leia@leia.com` } as the argument,
  * the returned value should look like `Hello, my name is Leia`.
 */
-function getName(/* code here */) {
-  /* code here */
+function getName(person) {
+  return `Hello, my name is ${person.name}`;
 }
+
+const person = {
+  name: 'Leia',
+};
+
+
+
+
 
 /**
  * ### Challenge `makeSmartPerson`
@@ -73,9 +89,22 @@ function getName(/* code here */) {
  *         and returns a string like `Hello, my name is {name}`.
  *         where `{name}` is the name passed into `makeSmartPerson`.
 */
-function makeSmartPerson(/* code here */) {
-  /* code here */
+function makeSmartPerson(name) {
+  return msp;
 }
+
+const msp = { 
+  sum: function(num1, num2){
+    return num1 + num2;
+  },
+  speak: function(){
+    return `Hello, my name is ${name}`;
+  }
+}
+
+
+
+
 
 
 
@@ -135,9 +164,7 @@ function get3rdCar(inventory) {
  * For example, if getCarInfoByIndex is invoked with the inventory and the number 0,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoByIndex(inventory, index) {
-  /* code here */
-}
+
 
 /**
  * ### Challenge `getLastCarInfo`
@@ -244,9 +271,19 @@ function getGermanCars(/* code here */) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+
+
+const sum = (a, b) => a + b;
+
+
+
+
+const addFive = (num) => num + 5;
+
+
+
+
+const argTimesTwo = (num) => num * 2;
 
 /**
  * ### Challenge `carMaker`
